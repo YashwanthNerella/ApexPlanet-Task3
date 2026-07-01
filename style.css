@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* Navigation */
+header {
+    background-color: #2c3e50;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Quiz Section */
+#quiz {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#quiz h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#quiz button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#quiz button:hover {
+    background-color: #2c3e50;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Joke Section */
+#joke {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#joke h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#joke-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#joke button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#joke button:hover {
+    background-color: #27ae60;
+}
+
+/* Media Queries - Responsive! */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #quiz, #joke {
+        width: 90%;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}

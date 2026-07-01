@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Advanced Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PART 1 - Responsive Header -->
+<header>
+    <nav>
+        <h1>Yashwanth Nerella</h1>
+        <ul>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#joke">Joke API</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- PART 2 - Interactive Quiz -->
+<section id="quiz">
+    <h2>Python Quiz</h2>
+    <div id="question-box">
+        <p id="question">What is Python?</p>
+        <button onclick="checkAnswer('correct')">A Programming Language</button>
+        <button onclick="checkAnswer('wrong')">A Snake Only</button>
+        <button onclick="checkAnswer('wrong')">A Game</button>
+    </div>
+    <p id="result"></p>
+    <p>Score: <span id="score">0</span></p>
+</section>
+
+<!-- PART 3 - Joke API -->
+<section id="joke">
+    <h2>Random Joke Generator</h2>
+    <p id="joke-text">Click button to get a joke!</p>
+    <button onclick="getJoke()">Get Joke 😄</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
